@@ -35,7 +35,7 @@ Route::get('/delete', function () {
     $hour=Carbon::createFromTimestamp($now->getTimestamp()- $befor->getTimestamp())->hour;
 
     if ($minute===15 && $hour===9){
-        Message::where('from', 29)->delete();
+        Message::where('from', Auth::user()->id)->delete();
     }else{
         return Redirect::back()->withErrors(['Not Time For Delete Messages', 'The Message']);
     }
