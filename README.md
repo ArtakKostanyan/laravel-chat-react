@@ -9,6 +9,7 @@ https://github.com/ArtakKostanyan/laravel-chat-react.git
 ```
 cd laravel-chat-react
 $ composer install
+$ npm install 
 ```
 
 3. Create and setup .env file
