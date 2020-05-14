@@ -17,7 +17,7 @@ export default function Message() {
 
         if (message.length > 0) {
             scrollToBottom()
-            console.log('exab')
+            
         }
     })
 
