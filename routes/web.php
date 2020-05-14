@@ -19,10 +19,11 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/', function () {
 
-Route::get('/', function () {
-
-    return view('welcome');
+        return view('welcome');
+    });
 });
 
 Route::get('/delete', function () {
