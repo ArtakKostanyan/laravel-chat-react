@@ -1,6 +1,3 @@
-# Laravel realtime chatting application
-
-Very simple php based chatting application
 
 # Installation
 1. Clone this repo
