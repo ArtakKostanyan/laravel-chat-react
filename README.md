@@ -29,3 +29,4 @@ $ factory(App\Message::class, 500)->create();
 
 5. Create and setup pusher account
 
+6. Run php artisan queue:work
