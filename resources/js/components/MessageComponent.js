@@ -48,25 +48,7 @@ export default function Message() {
 
                 dispatch({type: 'message', payload: arr})
             }
-            // fetch('http://laravel-chat/api/message', {
-            //     method: 'POST',
-            //     headers: {
-            //         'content-type': 'application/json',
-            //     },
-            //     cache: 'no-cache',
-            //     body: JSON.stringify({
-            //         my: window.user.id,
-            //         user: userId
-            //     })
-            //
-            // })
-            //     .then(response => response.json())
-            //     .then(resulte => {
-            //         if (resulte.ok) {
-            //             dispatch({type: 'message', payload: resulte.messages})
-            //         }
-            //     }).catch(error => console.error('asd'))
-
+           
 
         });
     }, [])
